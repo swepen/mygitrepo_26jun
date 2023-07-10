@@ -1,0 +1,17 @@
+node
+
+{stage('clone java project') {
+git 'https://github.com/swepen/swepen.git'    
+}
+
+
+    stage('execute maven targets') {
+    sh 'mvn install'
+}
+    
+    
+    
+    
+    
+    
+}
